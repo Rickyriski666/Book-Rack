@@ -1,0 +1,400 @@
+:root {
+  --bg-color-brown: #291811;
+  --bg-color-treal: #f1ece9;
+  --text-white: #fff;
+  --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --font-poppins: 'Poppins';
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+.navbar {
+  padding: 15px 20px;
+  box-sizing: border-box;
+  background-color: var(--bg-color-brown);
+}
+
+.title {
+  color: var(--text-white);
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Poppins';
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.add-section {
+  margin: 1.25rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-button,
+.save-button,
+.cancel-button {
+  padding: 8px 16px;
+  font-family: var(--font-poppins);
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--bg-color-brown);
+  color: var(--text-white);
+  border-radius: 12px;
+  margin-right: 0.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.edit-button {
+  padding: 8px 16px;
+  font-family: var(--font-poppins);
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--bg-color-brown);
+  color: var(--text-white);
+  border-radius: 12px;
+  margin-right: 0.5rem;
+  box-shadow: var(--box-shadow);
+  display: none;
+}
+
+.add-button:hover,
+.save-button:hover,
+.edit-button:hover,
+.cancel-button:hover,
+.btn-card:hover,
+.button-search:hover {
+  cursor: pointer;
+  background-color: #49423f;
+}
+
+.search-section {
+  display: flex;
+  justify-content: baseline;
+}
+
+.search-section .searchbar {
+  margin-right: 5px;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 16px;
+  font-family: var(--font-poppins);
+  font-weight: bold;
+}
+
+.search-section .button-search {
+  background-color: var(--bg-color-brown);
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+
+.search-section .button-search img {
+  font-size: 1rem;
+}
+
+.form-add {
+  padding: 17px 32px;
+  min-width: fit-content;
+  background-color: var(--bg-color-treal);
+  border: 1px solid;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 2rem;
+  display: none;
+}
+
+.form-add form {
+  min-width: 350px;
+}
+
+.form-add .title-form {
+  margin-bottom: 1.25rem;
+  font-family: var(--font-poppins);
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--bg-color-brown);
+}
+
+.form-add .label-title,
+.label-author,
+.label-year {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--font-poppins);
+  margin-bottom: 0.5rem;
+}
+
+.form-add .input-title,
+.input-author,
+.input-year {
+  box-sizing: border-box;
+  min-width: 100%;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-family: var(--font-poppins);
+  margin-bottom: 1rem;
+}
+
+.checkcontainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.check-read {
+  margin-right: 0.75rem;
+  width: 24px;
+  height: 24px;
+  border: 1px solid;
+}
+
+.label-read {
+  font-family: var(--font-poppins);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.button-form {
+  display: flex;
+  justify-content: end;
+}
+
+.card {
+  display: block;
+  min-width: 100%;
+  min-height: 9rem;
+  background-color: var(--bg-color-treal);
+  box-shadow: var(--box-shadow);
+  padding: 17px 32px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.title-card {
+  font-family: var(--font-poppins);
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.break-line {
+  border: 1px solid;
+  margin-bottom: 1.25rem;
+}
+
+.no-book {
+  margin: 1.5rem 0;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: var(--font-poppins);
+  display: none;
+}
+
+.card-book {
+  height: 130px;
+  background-color: var(--bg-color-brown);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 11px 10px;
+  box-sizing: border-box;
+  margin-bottom: 1.25rem;
+  list-style: none;
+}
+
+.detail-book {
+  margin-bottom: 1.5rem;
+}
+
+.title-book,
+.author-book {
+  font-family: var(--font-poppins);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.year-book {
+  font-family: var(--bg-color-brown);
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: end;
+}
+
+.btn-card {
+  padding: 6px 12px;
+  font-family: var(--font-poppins);
+  font-size: 0.5rem;
+  font-weight: bold;
+  background-color: var(--bg-color-treal);
+  color: var(--bg-color-brown);
+  border-radius: 12px;
+  margin-right: 0.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+@media screen and (min-width: 768px) {
+  .list-book {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+  }
+
+  .card {
+    min-width: 350px;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    min-width: 600px;
+    margin-right: 1rem;
+  }
+  .container {
+    padding: 0 325px;
+  }
+
+  .navbar {
+    padding: 15px 350px;
+  }
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

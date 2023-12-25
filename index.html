@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Book Rack</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="title">Book Rack</h1>
+    </nav>
+
+    <div class="container">
+      <div class="add-section">
+        <div>
+          <button class="add-button" id="addButton" type="button">
+            Add Book
+          </button>
+        </div>
+        <div class="search-section">
+          <input
+            type="text"
+            id="search"
+            placeholder="search"
+            class="searchbar"
+          />
+          <button class="button-search">
+            <img src="/src/image/Vector.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="form-add" id="formAdd">
+        <form action="#" class="form" id="form">
+          <div class="title-form">
+            <h2>Add New Book</h2>
+          </div>
+          <div>
+            <label for="title" class="label-title"><h3>Title</h3></label>
+            <input type="text" class="input-title" id="title" name="title" />
+          </div>
+          <div>
+            <label for="author" class="label-author"><h3>Author</h3></label>
+            <input type="text" name="author" id="author" class="input-author" />
+          </div>
+          <div>
+            <label for="year" class="label-year"><h3>Year</h3></label>
+            <input type="number" name="year" id="year" class="input-year" />
+          </div>
+          <div class="checkcontainer">
+            <input
+              type="checkbox"
+              name="read"
+              id="isComplete"
+              class="check-read"
+            />
+            <label for="isComplete" class="label-read">Already Read</label>
+          </div>
+          <div class="button-form" id="button-form">
+            <button class="save-button" type="submit" id="save">Save</button>
+            <button class="edit-button" id="edit">Update</button>
+            <button class="cancel-button" id="cancel" type="reset">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="list-book">
+        <div class="card">
+          <h3 class="title-card">Unread Book</h3>
+          <hr class="break-line" />
+          <p class="no-book">No Book Yet</p>
+          <div id="unread"></div>
+        </div>
+
+        <div class="card">
+          <h3 class="title-card">Finished Book</h3>
+          <hr class="break-line" />
+          <p class="no-book">No Book Yet</p>
+          <div id="read"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
